@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Alignment Examples</title>
+    <style>
+        /* 1. Text Align Center (Untuk Teks) */
+        .center-text {
+            text-align: center;
+            border: 2px solid blue;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 2. Block Element Centering (Untuk Elemen Blok) */
+        .block-center {
+            margin: auto;
+            width: 50%;
+            border: 2px solid red;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* 3. Centering an Image */
+        .image-center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            border: 2px solid darkcyan;
+            margin-bottom: 20px;
+        }
+
+        /* 4. Right Align Using Position Absolute */
+        .right-position {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 2px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* 5. Right Align Using Float */
+        .right-float {
+            float: right;
+            width: 300px;
+            border: 2px solid #73AD21;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 6. Clearfix Hack for Floating Elements */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* 7. Vertical Centering Using Padding */
+        .vertical-padding {
+            padding: 70px 0;
+            border: 2px solid green;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* 8. Vertical Centering Using Line-Height */
+        .line-height-center {
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border: 2px solid purple;
+            margin-bottom: 20px;
+        }
+
+        /* 9. Centering Using Position & Transform */
+        .absolute-center-container {
+            position: relative;
+            height: 300px;
+            border: 2px solid orange;
+            margin-bottom: 20px;
+        }
+
+        .absolute-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid orange;
+            padding: 20px;
+            background-color: lightyellow;
+        }
+
+        /* 10. Centering Using Flexbox */
+        .flex-center-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Alignment Examples</h2>
+
+    <!-- 1. Text Align Center -->
+    <div class="center-text">
+        <p>Ini teks yang diposisikan di tengah menggunakan text-align: center;</p>
+    </div>
+
+    <!-- 2. Block Element Centering -->
+    <div class="block-center">
+        <p>Ini div yang diposisikan di tengah menggunakan margin: auto;</p>
+    </div>
+
+    <!-- 3. Centering an Image -->
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.its.ac.id%2Fid%2Flogo-its-2%2F&psig=AOvVaw3Mrle7Mys9rQ0MUWzUgb2M&ust=1741899009681000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOD67s61hYwDFQAAAAAdAAAAABAE" alt="Contoh Gambar" class="image-center">
+
+    <!-- 4. Right Align Using Position Absolute -->
+    <div class="right-position">
+        <p>Ini elemen yang di-posisikan di kanan menggunakan position: absolute.</p>
+    </div>
+
+    <!-- 5. Right Align Using Float -->
+    <div class="right-float">
+        <p>Ini elemen yang di-posisikan di kanan menggunakan float: right.</p>
+    </div>
+
+    <!-- 6. Clearfix Hack -->
+    <div class="clearfix">
+        <p>Ini elemen dengan clearfix hack agar float tidak merusak tata letak.</p>
+    </div>
+
+    <!-- 7. Vertical Centering Using Padding -->
+    <div class="vertical-padding">
+        <p>Ini div yang diposisikan di tengah secara vertikal menggunakan padding.</p>
+    </div>
+
+    <!-- 8. Vertical Centering Using Line-Height -->
+    <div class="line-height-center">
+        <p>Ini div yang diposisikan di tengah secara vertikal menggunakan line-height.</p>
+    </div>
+
+    <!-- 9. Centering Using Position & Transform -->
+    <div class="absolute-center-container">
+        <div class="absolute-center">
+            <p>Ini div yang diposisikan di tengah menggunakan position & transform.</p>
+        </div>
+    </div>
+
+    <!-- 10. Centering Using Flexbox -->
+    <div class="flex-center-container">
+        <p>Ini div yang diposisikan di tengah menggunakan flexbox.</p>
+    </div>
+
+</body>
+</html>
