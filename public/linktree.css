@@ -1,0 +1,263 @@
+body {
+  background-color: #d3d3d3;
+  font-family: "Garamont", serif;
+}
+
+.profile-card {
+  background-image: url("image/profilealli.webp");
+  background-size: cover;
+  background-position: center;
+  width: 575px;
+  height: 500px;
+  margin: 20px auto;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.profile-card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, #d3d3d3, transparent);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.name,
+.social-icons,
+.toggle-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.social-icons {
+  margin-bottom: 5px;
+}
+
+.social-icons i {
+  font-size: 28px;
+  margin: 0 7px;
+  color: #000;
+  cursor: pointer;
+}
+
+.toggle-wrapper {
+  display: flex;
+  background: #84847c;
+  border-radius: 40px;
+  overflow: hidden;
+  width: fit-content;
+  border: 2px solid #84847c;
+  margin-top: 16px;
+}
+
+.toggle-btn {
+  padding: 12px 30px;
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.toggle-btn.active {
+  background: white;
+  color: black;
+  border-radius: 40px;
+}
+
+.toggle-content {
+  text-align: center;
+}
+
+.content-section {
+  display: none;
+  color: black;
+  z-index: 2;
+  position: relative;
+}
+
+.content-section.active {
+  display: block;
+}
+
+.carousel-inner {
+  padding: 30px 0;
+
+}
+
+.carousel-item .card {
+  flex: 0 0 25%;
+  padding: 10px
+  
+}
+
+.card{
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  overflow: hidden;
+  width: 240px;
+  padding: 12px;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 24px ;
+}
+
+.card-title {
+  font-weight: normal;
+  font-size: 16px;
+  left: 20px; 
+  bottom: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  padding: 16px;
+}
+.card:hover {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.link-card {
+  background-color: white;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+  padding: 15px 25px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  max-width: 575px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.2s;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+.link-card:hover {
+  border-color: #ffffff;
+  background-color: transparent;
+  }
+
+.link-icon {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.link-text {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 15px;
+}
+
+.link-menu {
+  font-size: 16px;
+  color: #888;
+}
+
+.icon-image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  border-radius: 24px;
+  background: #fff;
+  padding: 8px;
+  position: relative;
+}
+
+.product-card img {
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  border-radius: 24px;
+}
+
+.card-body {
+  padding: 5px;
+}
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.product-card2 {
+  background-color: white;
+  border-radius: 24px;
+  padding: 24px;
+  width: 575px;
+  border: 2px solid #ffffff;
+}
+
+.product-card2:hover {
+  border-color: #ffffff;
+  background-color: transparent;
+}
+
+.product-images {
+  display: flex;
+  justify-content: start;
+  gap: 12px;
+  overflow-x: auto;
+}
+
+.product-images img {
+  width: 165px;
+  height: 175px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.product-info {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.product-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.product-count {
+  color: #666;
+  font-size: 1rem;
+  margin: 0;
+}

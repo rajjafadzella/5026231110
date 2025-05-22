@@ -1,0 +1,108 @@
+/* 1. Center Align Elements */
+.align-elements {
+    margin: auto;
+    width: 50%;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+/* 2. Text Align Center */
+.center-text {
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 3. Centering Image */
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border: 2px solid rgb(139, 0, 0);
+    margin-bottom: 20px;
+}
+
+/* 4. Right Align Using Position Absolute */
+.right-position {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 2px solid #ad2121;
+    padding: 10px;
+}
+
+/* 5. Right Align Using Float */
+.right-float {
+    float: right;
+    width: 300px;
+    border: 2px solid #ad2121;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 6. Clearfix Hack for Floating Elements */
+.container {
+    border: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+/* Gambar di kanan menggunakan float */
+.fotoclr {
+    float: right;
+    margin-left: 15px; 
+    padding: 5px;
+}
+
+/* Clearfix Hack */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* 7. Vertical Centering Using Padding */
+.vertical-padding {
+    padding: 70px 0;
+    border: 2px solid rgb(128, 0, 0);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 8. Vertical Centering Using Line-Height */
+.line-height-center {
+    height: 200px;
+    line-height: 150px;
+    text-align: center;
+    border: 2px solid rgb(128, 0, 0);
+    margin-bottom: 20px;
+}
+
+/* 9. Centering Using Position & Transform */
+.absolute-center-container {
+    position: relative;
+    height: 300px;
+    border: 2px solid rgb(255, 0, 0);
+    margin-bottom: 20px;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(255, 0, 0);
+    padding: 20px;
+}
+
+/* 10. Centering Using Flexbox */
+.flex-center-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 300px;
+    border: 2px solid rgb(255, 0, 0);
+}
