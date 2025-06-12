@@ -13,47 +13,51 @@
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <style>
         .jumbotron {
-            background-color: #9de2e2;
-            height: 100px;
+        background-image: linear-gradient(to right, #2599e0, #87dadd);
+        height: 100px;
         }
     </style>
 </head>
 
 <body>
-    <div class="jumbotron text-center mx-auto">
-        <h1>5026231110 : Muhammad Rajja Fadzell A</h1>
+    <div class="jumbotron d-flex justify-content-center align-items-center text-center text-white mb-0" style="height: 200px;">
+        <h1 class="display-4 mb-0">5026231110 : Muhammad Rajja Fadzell A</h1>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="frontend">All Front End</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/pegawai">Pegawai</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/sepedamotor">Tugas CRUD</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">EAS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Latihan 3</a>
-            </li>
-        </ul>
-    </nav>
-    <br>
+<nav class="navbar navbar-expand-sm navbar-light bg-light border-bottom shadow-sm">
     <div class="container">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex flex-wrap">
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="/frontend">All Front End</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="/pegawai">Pegawai</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="/sepedamotor">Tugas CRUD</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="#">EAS</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="#">Latihan 1</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="#">Latihan 2</a>
+                </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="/karyawan">Latihan 3</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container mt-4">
         @yield('content')
     </div>
-
 </body>
+
 
 </html>
