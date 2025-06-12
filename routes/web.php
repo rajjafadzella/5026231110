@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\SepedaMotorController;
 
 //use itu import java.io kalo di java
 //Illuminate\Support\Facades\ itu package, route itu class
@@ -91,3 +92,11 @@ Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+Route::get('/sepedamotor', [SepedaMotorController::class, 'index']);
+Route::get('/sepedamotor/tambah', [SepedaMotorController::class, 'tambah']);
+Route::post('/sepedamotor/store', [SepedaMotorController::class, 'store']);
+Route::get('/sepedamotor/edit/{id}', [SepedaMotorController::class, 'edit']);
+Route::post('/sepedamotor/update', [SepedaMotorController::class, 'update']);
+Route::get('/sepedamotor/hapus/{id}', [SepedaMotorController::class, 'hapus']);
+Route::get('/sepedamotor/cari', [SepedaMotorController::class, 'cari']);
