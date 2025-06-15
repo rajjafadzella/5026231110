@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Muhammad Rajja Fadzell A : 5026231110</title>
+    <title>5026231110 : Muhammad Rajja Fadzell A</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -41,10 +41,10 @@
                     <a class="nav-link btn btn-primary text-white" href="#">EAS</a>
                 </li>
                 <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link btn btn-primary text-white" href="#">Latihan 1</a>
+                    <a class="nav-link btn btn-primary text-white" href="/counter">Latihan 1</a>
                 </li>
                 <li class="nav-item mr-2 mb-2">
-                    <a class="nav-link btn btn-primary text-white" href="#">Latihan 2</a>
+                    <a class="nav-link btn btn-primary text-white" href="/karyawan">Latihan 2</a>
                 </li>
                 <li class="nav-item mr-2 mb-2">
                     <a class="nav-link btn btn-primary text-white" href="/karyawan">Latihan 3</a>
