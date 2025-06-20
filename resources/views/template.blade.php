@@ -49,6 +49,9 @@
                 <li class="nav-item mr-2 mb-2">
                     <a class="nav-link btn btn-primary text-white" href="/karyawan">Latihan 3</a>
                 </li>
+                <li class="nav-item mr-2 mb-2">
+                    <a class="nav-link btn btn-primary text-white" href="/eas">EAS</a>
+                </li>
             </ul>
         </div>
     </div>

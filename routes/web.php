@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\SepedaMotorController;
 use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\PageCounterController;
+use App\Http\Controllers\NewKaryawanController;
 
 //use itu import java.io kalo di java
 //Illuminate\Support\Facades\ itu package, route itu class
@@ -110,3 +111,9 @@ Route::post('/karyawan/update', [KaryawanController::class, 'update']);
 Route::get('/karyawan/hapus/{kodepegawai}', [KaryawanController::class, 'hapus']);
 
 Route::get('/counter', [PageCounterController::class, 'index']);
+
+Route::get('/eas', [NewKaryawanController::class, 'index']);
+Route::get('/eas/tambah', [NewKaryawanController::class, 'tambah']);
+Route::get('/eas/hapus/{id}', [NewKaryawanController::class, 'hapus']);
+Route::post('/eas/store', [NewKaryawanController::class, 'store']);
+Route::post('/eas/update', [NewKaryawanController::class, 'update']);
